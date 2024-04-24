@@ -22,9 +22,9 @@ app.use("/email", emailRoutes);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-app.get('/favicon.ico', (req, res) => 
-  res.status(204)
-);
+// app.get('/favicon.ico', (req, res) => 
+//   res.status(204)
+// );
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
