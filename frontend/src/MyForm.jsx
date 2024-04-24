@@ -18,7 +18,7 @@ export default function MyForm() {
   const [subject, setSubject] = useState("");
   const [file, setFile] = useState(null);
   const [emails, setEmails] = useState([]);
-  const baseUrl = "http://localhost:8000";
+  const baseUrl = "https://email-sender-backend-zjae.vercel.app/";
 
   const handleUpload = (event) => {
     if (!file) {
