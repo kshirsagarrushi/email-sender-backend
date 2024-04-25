@@ -1,11 +1,11 @@
 const express = require("express");
-// var favicon = require('serve-favicon')
+var favicon = require('serve-favicon')
 const dotenv = require("dotenv");
 const emailRoutes = require("./routes/emailRoutes");
 
 const app = express();
 dotenv.config();
-// app.use(favicon(path.join(__dirname,'public','favicon.ico')));
+app.use(favicon(path.join(__dirname,'public','favicon.ico')));
 const cors = require("cors");
 const corsOptions = {
   origin: "*",
@@ -23,9 +23,10 @@ app.use("/email", emailRoutes);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-// app.get('/favicon.ico', (req, res) => 
-//   res.status(204)
-// );
+
+app.get('/favicon.ico', (req, res) => 
+  res.status(204).end()
+);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
