@@ -6,7 +6,7 @@ const emailRoutes = require("./routes/emailRoutes");
 
 const app = express();
 dotenv.config();
-app.use(favicon(path.join(__dirname,'frontend','public','favicon.ico')));
+app.use(favicon(path.join(__dirname,'frontend','public','favicon.png')));
 const cors = require("cors");
 const corsOptions = {
   origin: "*",
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get('/favicon.ico', (req, res) => 
+app.get('/favicon.png', (req, res) => 
   res.status(204).end()
 );
 
