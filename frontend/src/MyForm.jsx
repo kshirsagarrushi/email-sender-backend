@@ -18,7 +18,7 @@ export default function MyForm() {
   const [subject, setSubject] = useState("");
   const [file, setFile] = useState(null);
   const [emails, setEmails] = useState([]);
-  const baseUrl = "https://vercel.com/kshirsagarrushis-projects/email-sender-server/5aX2S3GsKHq9MtgLPKutzojWjZVD";
+  const baseUrl = "https://email-sender-server-dusky.vercel.app";
 
   const handleUpload = (event) => {
     if (!file) {
