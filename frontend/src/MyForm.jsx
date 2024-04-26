@@ -25,7 +25,7 @@ export default function MyForm() {
       toast.info("Please select a file");
       return;
     }
-    toast.success("Files are being parsed");
+    toast.success("Emails are being extracted");
     readAndExtractEmails(file);
   };
 
@@ -145,11 +145,9 @@ export default function MyForm() {
   `
         const dataSend = {
           subject: subject,
-          emails: [email],// Send email as an array to match the expected format in the backend
+          emails: [email], // Send email as an array to match the expected format in the backend
           html:template,
-         
         };
-
         // Send the personalized email
         const res = await fetch(`${baseUrl}/email/sendEmail`, {
           method: "POST",
@@ -168,7 +166,6 @@ export default function MyForm() {
           console.error(`Failed to send email to ${email}. Status code: ${res.status}`);
         }
       }
-
       // After sending all emails, show success message
       toast.success("All emails have been sent successfully!");
     } catch (error) {
