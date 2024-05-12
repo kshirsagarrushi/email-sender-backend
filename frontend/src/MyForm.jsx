@@ -73,15 +73,14 @@ export default function MyForm() {
         <h1>Welcome to the Wolf Den Investors Summit 2024</h1>
         <p>Hi,</p>
         <p>
-          Post our success last year, we are excited to invite you to the Wolf Den Investors Summit being organized on 22 June 2024 at <a href="https://maps.app.goo.gl/YHDrurdFMzR7FzvS6"> Mukesh Patel Auditorium </a> - Vile Parle, Mumbai and would like to invite you in summit.
+          Post our success last year, we are excited to invite you to the Wolf Den Investors Summit being organized on 22 June 2024 at <a href="https://maps.app.goo.gl/YHDrurdFMzR7FzvS6"> Mukesh Patel Auditorium </a> - Vile Parle, Mumbai.
         </p>
-        <img src={baseUrl+'/assets/wolfden1.jpg'} />
-        <p>Catch a glimpse of our Mumbai 23 event at <a href="https://www.venturewolf.in">our website</a> and read about the investors and speakers that attended on <a href="https://www.businessupside.com">Business Upside</a>.</p>
-        <p>Check out the event highlights video on <a href="https://www.youtube.com">YouTube</a>.</p>
+
+        <p>Catch a glimpse of our Mumbai 23 event at <a href="https://www.venturewolf.in">our website</a> and read about the investors and speakers that attended on <a href="https://businessupside.com/top-investors-of-the-country-attend-indias-biggest-startup-investors-summit-wolf-den/">Business Upside</a>.</p>
+        <p>Check out the event highlights video on <a href="https://www.youtube.com/watch?v=1ia-dJe3LwQ">YouTube</a>.</p>
         <p>Don't miss the Mumbai 24 Edition; it will be bigger and better this year!</p>
         <p>Book your tickets now at: <a href="https://allevents.in/mumbai/wolf-den-investors-summit-2024/80002910972804?ref=smdl">Buy Tickets</a></p>
         <p>We look forward to hosting you at the event.</p>
-        <img src={baseUrl+'/assets/wolfden2.jpg'}  alt="Wolf Den Event Image" width="500" />
         <p>Thanks & Regards,<br/>Wolf Den Team</p>
         <p>
           [<a href="https://www.venturewolf.in">Website</a>]<br/>
